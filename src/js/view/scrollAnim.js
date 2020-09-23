@@ -5,10 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 import anime from 'animejs/lib/anime.es.js';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 let fWrap = document.getElementById('special');
-let fWrapBorder = document.getElementById('title-border');
+/*let fWrapBorder = document.getElementById('title-border');*/
 let sHeader = document.getElementById('special-header');
 
 let specialOne = document.getElementById('special-1');
@@ -37,6 +38,7 @@ gsap.to("#special", {
     opacity: 1,
     duration: 0.5
 });
+/*
 gsap.to("#title-border", {
     scrollTrigger: {
         trigger: '#special',
@@ -46,7 +48,7 @@ gsap.to("#title-border", {
     opacity: 1,
     duration: 0.5
 });
-
+*/
 
 //specials jump in
 gsap.to("#special-1", {
@@ -103,6 +105,8 @@ gsap.to("#menu-wrapper", {
     duration: 0.75
 });
 
+
+
 // ************************************
 // Make text fade in --not finished
 /*
@@ -126,6 +130,29 @@ window.onscroll = function () {
     }
     if(window.scrollY < 400) {
         document.getElementById('anim').style.opacity = '1';
+    }
+
+
+    if (window.scrollY < 720) {
+        document.getElementById('head-opt-1').classList.add('menu-item-active');
+        document.getElementById('head-opt-2').classList.remove('menu-item-active');
+        document.getElementById('head-opt-3').classList.remove('menu-item-active');
+        document.getElementById('head-opt-4').classList.remove('menu-item-active');
+    } else if (window.scrollY > 720  && window.scrollY <1470) {
+        document.getElementById('head-opt-1').classList.remove('menu-item-active');
+        document.getElementById('head-opt-2').classList.add('menu-item-active');
+        document.getElementById('head-opt-3').classList.remove('menu-item-active');
+        document.getElementById('head-opt-4').classList.remove('menu-item-active');
+    } else if (window.scrollY > 1470 && window.scrollY < 2290) {
+        document.getElementById('head-opt-1').classList.remove('menu-item-active');
+        document.getElementById('head-opt-2').classList.remove('menu-item-active');
+        document.getElementById('head-opt-3').classList.add('menu-item-active');
+        document.getElementById('head-opt-4').classList.remove('menu-item-active');
+    } else {
+        document.getElementById('head-opt-1').classList.remove('menu-item-active');
+        document.getElementById('head-opt-2').classList.remove('menu-item-active');
+        document.getElementById('head-opt-3').classList.remove('menu-item-active');
+        document.getElementById('head-opt-4').classList.add('menu-item-active');
     }
 }
 /*

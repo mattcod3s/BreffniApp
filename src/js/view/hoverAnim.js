@@ -74,7 +74,7 @@ specialTitle3.addEventListener('mouseleave', () => {
 info1img.addEventListener('mouseenter', () => {
     infoFood1.style.background = 'transparent';
     infoFood1.style.opacity = '1';
-    infoFood1.style.transitionDelay = '0.5';
+    infoFood1.style.transitionDelay = '1s';
     info1.style.transform = 'scale(3.5)';
 });
 info1img.addEventListener('mouseleave', () => {
@@ -87,7 +87,7 @@ info1img.addEventListener('mouseleave', () => {
 info2img.addEventListener('mouseenter', () => {
     infoFood2.style.background = 'transparent';
     infoFood2.style.opacity = '1';
-    infoFood2.style.transitionDelay = '0.5';
+    infoFood2.style.transitionDelay = '1s';
     info2.style.transform = 'scale(3.5)';
 });
 info2img.addEventListener('mouseleave', () => {
@@ -100,7 +100,7 @@ info2img.addEventListener('mouseleave', () => {
 info3img.addEventListener('mouseenter', () => {
     infoFood3.style.background = 'transparent';
     infoFood3.style.opacity = '1';
-    infoFood3.style.transitionDelay = '0.5';
+    infoFood3.style.transitionDelay = '1s';
     info3.style.transform = 'scale(3.5)';
 });
 info3img.addEventListener('mouseleave', () => {
