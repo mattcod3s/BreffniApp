@@ -34,7 +34,7 @@ gsap.to("#special", {
         trigger: '#special',
         start: 'top bottom' 
     },
-    marginTop: 0,
+    y: 0,
     opacity: 1,
     duration: 0.5
 });
@@ -56,7 +56,7 @@ gsap.to("#special-1", {
         trigger: '#special',
         start: 'top bottom' 
     },
-    marginTop: 0,
+    y: 0,
     opacity: 1,
     delay: 0,
     ease: "expo.out",
@@ -67,7 +67,7 @@ gsap.to("#special-2", {
         trigger: '#special',
         start: 'top bottom' 
     },
-    marginTop: 0,
+    y: 0,
     opacity: 1,
     delay: 0.5,
     ease: "expo.out",
@@ -78,7 +78,7 @@ gsap.to("#special-3", {
         trigger: '#special',
         start: 'top bottom' 
     },
-    marginTop: 0,
+    y: 0,
     opacity: 1,
     delay: 1,
     ease: "expo.out",
@@ -100,9 +100,10 @@ gsap.to("#menu-wrapper", {
         start: 'top center' 
     },
     y: 0,
-    ease: "back.out(1.7)",
+    ease: "expo.out",
     opacity: 1,
-    duration: 0.75
+    delay: 0.5,
+    duration: 0.8
 });
 
 
